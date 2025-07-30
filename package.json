@@ -1,0 +1,17 @@
+{
+  "name": "udemy_curso_mobile_android_robot",
+  "version": "1.0.0",
+  "description": "Curso De Robot Framework e Appium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Machado",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^2.19.0"
+  },
+  "devDependencies": {
+    "appium-uiautomator2-driver": "^4.2.5"
+  }
+}
