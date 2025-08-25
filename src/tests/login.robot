@@ -3,23 +3,19 @@ Library       AppiumLibrary
 
 
 Resource    ../resource/home.resource
+Resource    ../resource/login.resource
+Test Setup    Iniciar Sessão
+Test Teardown    Encerrar Sessão
 
 
 *** Test Cases ***
 login com sucesso
-    Iniciar Sessão
+
     
-    # Acessar menu
-    Click Element    xpath=//*[@content-desc="View menu"]
-    Click Element    xpath=//*[@content-desc="Login Menu Item"]
-    Wait Until Element Is Visible    id=com.saucelabs.mydemoapp.android:id/loginTV
+    Acessar página de Login
 
+    Fazer Login    email=bod@example.com    password=10203040
 
-    # Inserir dados
-    Input Text    id=com.saucelabs.mydemoapp.android:id/nameET    text=bod@example.com
-    Input Text    id=com.saucelabs.mydemoapp.android:id/passwordET    text=10203040
-   
-   Click Element    id=com.saucelabs.mydemoapp.android:id/loginBtn
    
    
     # Validação 
@@ -32,4 +28,24 @@ login com sucesso
     Wait Until Element Is Visible    xpath=//*[@content-desc="Logout Menu Item"]
     
     
-    Encerrar Sessão
+
+
+
+Login sem sucesso
+
+
+     Acessar página de Login
+
+
+    Fazer Login    email=alice@example.com    password=test
+
+    
+
+    #Validação
+    Wait Until Element Is Visible    id=com.saucelabs.mydemoapp.android:id/passwordErrorTV
+    Wait Until Page Contains    text=Sorry this user has been locked out
+
+
+
+
+#TODO Login Logout
