@@ -1,5 +1,6 @@
 *** Settings ***
 Library       AppiumLibrary
+#Library    SeleniumLibrary
 
 
 Resource    ../resource/home.resource
@@ -48,4 +49,30 @@ Login sem sucesso
 
 
 
-#TODO Login Logout
+Login e Logout
+
+    Acessar página de Login
+    Fazer Login    email=bod@example.com    password=10203040
+
+    # Validação
+    Wait Until Page Does Not Contain Element        id=com.saucelabs.mydemoapp.android:id/loginTV
+
+    Fazer Logout
+
+    # Validação
+    Wait Until Element Is Visible    id=com.saucelabs.mydemoapp.android:id/loginTV
+
+
+Login sem sucesso faltando campo
+    Acessar página de Login
+
+    # Login sem email
+    #EMPTY É UMA palavra reservada do proprio robot para vazio ou seja, ele nao irá escrever nada nos campos
+    Fazer Login    email=${EMPTY}    password=${EMPTY}
+
+    Wait Until Element Is Visible    xpath=//*[@resource-id="com.saucelabs.mydemoapp.android:id/nameErrorTV" and @text="Username is required"]
+
+    Fazer Login    email=test@test.com    password=${EMPTY}
+
+
+    Wait Until Element Is Visible    xpath=//*[@resource-id="com.saucelabs.mydemoapp.android:id/passwordErrorTV" and @text="Enter Password"]
