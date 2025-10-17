@@ -5,13 +5,16 @@ Library       AppiumLibrary
 Resource    ../resource/home.resource
 Resource    ../resource/login.resource
 Test Setup    Iniciar Sessão
-Test Teardown    Encerrar Sessão
+#Test Teardown    Encerrar Sessão
 
 
 *** Test Cases ***
 Teste checkout com sucesso
-
+    Acessar página de Login
+    Fazer Login    email=bod@example.com    password=10203040
+   
     #Adicionar produto
+    Wait Until Page Contains    text=Products
     Click Element    xpath=(//*[@content-desc="Product Image"])[1]
     Wait Until Page Contains Element    xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]
 
@@ -33,23 +36,25 @@ Teste checkout com sucesso
     
     #Prosseguir checkout
     Click Element    xpath=//android.widget.Button[@content-desc="Confirms products for checkout"]
+            
+    Wait Until Page Contains Element    id=com.saucelabs.mydemoapp.android:id/enterShippingAddressTV
 
-    Fazer Login    email=bod@example.com    password=10203040
-   
+    Input Text        id=com.saucelabs.mydemoapp.android:id/fullNameET    text=Jean Felippe
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/address1ET    text=Rio de Janeiro
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/address2ET    text=Rio de Janeiro
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/cityET    text=Rio de Janeiro
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/stateET     text=RJ
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/zipET    text=21031620
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/countryET    text=Brazil
+
+    Click Element    xpath=//android.widget.Button[@content-desc="Saves user info for checkout"]
+
+  
     #Conferir e concluir a compra
 
-    Input Text        id=com.saucelabs.mydemoapp.android:id/fullNameET    Jean Felippe
-
-    Input Text    id=com.saucelabs.mydemoapp.android:id/address1ET    Rio de Janeiro
-
-    Input Text    id=com.saucelabs.mydemoapp.android:id/address2ET    Rio de Janeiro
-
-    Input Text    id=com.saucelabs.mydemoapp.android:id/cityET    Rio de Janeiro
-
-    Input Text    id=com.saucelabs.mydemoapp.android:id/stateET     RJ
-
-    Input Text    id=com.saucelabs.mydemoapp.android:id/zipET    21031620
-
-    Input Text    id=com.saucelabs.mydemoapp.android:id/countryET    Brazil
-
-    Click Element    xpath=////android.widget.Button[@content-desc="Saves user info for checkout"]
