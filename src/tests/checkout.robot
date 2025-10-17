@@ -3,6 +3,7 @@ Library       AppiumLibrary
 
 
 Resource    ../resource/home.resource
+Resource    ../resource/login.resource
 Test Setup    Iniciar Sessão
 Test Teardown    Encerrar Sessão
 
@@ -23,5 +24,32 @@ Teste checkout com sucesso
 
 
     #Conferir carrinho
+
+    Wait until page Contains Element   xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/titleTV"]
+
+    Wait until page Contains Element   xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]
+
+    Wait until page Contains Element   xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/totalPriceTV"]
     
-    #Prosseguir
+    #Prosseguir checkout
+    Click Element    xpath=//android.widget.Button[@content-desc="Confirms products for checkout"]
+
+    Fazer Login    email=bod@example.com    password=10203040
+   
+    #Conferir e concluir a compra
+
+    Input Text        id=com.saucelabs.mydemoapp.android:id/fullNameET    Jean Felippe
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/address1ET    Rio de Janeiro
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/address2ET    Rio de Janeiro
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/cityET    Rio de Janeiro
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/stateET     RJ
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/zipET    21031620
+
+    Input Text    id=com.saucelabs.mydemoapp.android:id/countryET    Brazil
+
+    Click Element    xpath=////android.widget.Button[@content-desc="Saves user info for checkout"]
