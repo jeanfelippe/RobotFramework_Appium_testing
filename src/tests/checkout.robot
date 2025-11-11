@@ -58,3 +58,19 @@ Teste checkout com sucesso
   
     #Conferir e concluir a compra
 
+    Input Text     com.saucelabs.mydemoapp.android:id/nameET    text="Testando aqui"
+
+    Input Text     com.saucelabs.mydemoapp.android:id/cardNumberET   text="2302555010203020"
+
+    Input Text     com.saucelabs.mydemoapp.android:id/expirationDateET   text="0331"
+
+     Input Text     com.saucelabs.mydemoapp.android:id/securityCodeET    text="123"
+
+
+    Click Element    xpath=//android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]
+
+    #Ultima tela checkout
+    Click Element    xpath=//android.widget.Button[@content-desc="Completes the process of checkout"]
+
+    #assert para validar mensagem final
+    Wait until page Contains Element   xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/completeTV"]
