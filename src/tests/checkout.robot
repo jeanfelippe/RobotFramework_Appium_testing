@@ -57,8 +57,7 @@ Teste checkout com sucesso
     # Click Element    xpath=//android.widget.Button[@content-desc="Saves user info for checkout"]
 
   
-    E ao conferir e concluir a compra
-
+    E ao conferir e concluir a compra    nome=Jean    cartao=2302555010203020    exp=0331    sec_code=123
     # Input Text     com.saucelabs.mydemoapp.android:id/nameET    text="Testando aqui"
 
     # Input Text     com.saucelabs.mydemoapp.android:id/cardNumberET   text="2302555010203020"

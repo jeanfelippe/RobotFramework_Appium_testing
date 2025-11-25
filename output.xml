@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-11-19T13:04:49.490538" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-11-24T14:51:45.575770" rpa="false" schemaversion="5">
 <suite id="s1" name="Checkout" source="c:\Users\Jean\Downloads\udemy_curso_mobile_android_robot-main\udemy_curso_mobile_android_robot-main\RobotFramework_Appium_testing\src\tests\checkout.robot">
 <test id="s1-t1" name="Teste checkout com sucesso" line="13">
 <kw name="Iniciar Sessão" owner="home" type="SETUP">
@@ -18,289 +18,291 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-11-19T13:04:49.845449" elapsed="10.992284"/>
+<status status="PASS" start="2025-11-24T14:51:46.029786" elapsed="20.206327"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:04.145168" level="INFO">xpath criteria: //*[@content-desc="App logo and name"]</msg>
+<msg time="2025-11-24T14:52:10.042498" level="INFO">xpath criteria: //*[@content-desc="App logo and name"]</msg>
 <arg>xpath=//*[@content-desc="App logo and name"]</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-11-19T13:05:00.838728" elapsed="3.308438"/>
+<status status="PASS" start="2025-11-24T14:52:06.236113" elapsed="3.809386"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Products</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:04.147166" elapsed="0.292520"/>
+<status status="PASS" start="2025-11-24T14:52:10.045499" elapsed="0.257089"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:04:49.844469" elapsed="14.595217"/>
+<status status="PASS" start="2025-11-24T14:51:46.027787" elapsed="24.275802"/>
 </kw>
 <kw name="Acessar página de Login" owner="login">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:04.444682" level="INFO">Clicking element 'xpath=//*[@content-desc="View menu"]'.</msg>
-<msg time="2025-11-19T13:05:04.741683" level="INFO">xpath criteria: //*[@content-desc="View menu"]</msg>
+<msg time="2025-11-24T14:52:10.305587" level="INFO">Clicking element 'xpath=//*[@content-desc="View menu"]'.</msg>
+<msg time="2025-11-24T14:52:10.552589" level="INFO">xpath criteria: //*[@content-desc="View menu"]</msg>
 <arg>xpath=//*[@content-desc="View menu"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:04.443682" elapsed="0.298001"/>
+<status status="PASS" start="2025-11-24T14:52:10.304590" elapsed="0.247999"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:04.743691" level="INFO">Clicking element 'xpath=//*[@content-desc="Login Menu Item"]'.</msg>
-<msg time="2025-11-19T13:05:05.990795" level="INFO">xpath criteria: //*[@content-desc="Login Menu Item"]</msg>
+<msg time="2025-11-24T14:52:10.554588" level="INFO">Clicking element 'xpath=//*[@content-desc="Login Menu Item"]'.</msg>
+<msg time="2025-11-24T14:52:11.701927" level="INFO">xpath criteria: //*[@content-desc="Login Menu Item"]</msg>
 <arg>xpath=//*[@content-desc="Login Menu Item"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:04.742685" elapsed="1.248110"/>
+<status status="PASS" start="2025-11-24T14:52:10.553589" elapsed="1.149343"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:07.043800" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/loginTV
+<msg time="2025-11-24T14:52:12.793031" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/loginTV
 criteria is com.saucelabs.mydemoapp.android:id/loginTV</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/loginTV</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-11-19T13:05:05.990795" elapsed="1.053982"/>
+<status status="PASS" start="2025-11-24T14:52:11.702932" elapsed="1.090099"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:04.442681" elapsed="2.602096"/>
+<status status="PASS" start="2025-11-24T14:52:10.303589" elapsed="2.489442"/>
 </kw>
 <kw name="Fazer Login" owner="login">
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:07.047778" level="INFO">Typing text 'bod@example.com' into text field 'id=com.saucelabs.mydemoapp.android:id/nameET'</msg>
-<msg time="2025-11-19T13:05:07.165781" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/nameET</msg>
+<msg time="2025-11-24T14:52:12.795030" level="INFO">Typing text 'bod@example.com' into text field 'id=com.saucelabs.mydemoapp.android:id/nameET'</msg>
+<msg time="2025-11-24T14:52:12.998032" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/nameET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/nameET</arg>
 <arg>text=${email}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:07.045779" elapsed="0.120002"/>
+<status status="PASS" start="2025-11-24T14:52:12.794030" elapsed="0.204999"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:07.167779" level="INFO">Typing text '10203040' into text field 'id=com.saucelabs.mydemoapp.android:id/passwordET'</msg>
-<msg time="2025-11-19T13:05:07.731718" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/passwordET</msg>
+<msg time="2025-11-24T14:52:13.001546" level="INFO">Typing text '10203040' into text field 'id=com.saucelabs.mydemoapp.android:id/passwordET'</msg>
+<msg time="2025-11-24T14:52:13.547319" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/passwordET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/passwordET</arg>
 <arg>text=${password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:07.165781" elapsed="0.565937"/>
+<status status="PASS" start="2025-11-24T14:52:12.999550" elapsed="0.548770"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:07.733719" level="INFO">Clicking element 'id=com.saucelabs.mydemoapp.android:id/loginBtn'.</msg>
-<msg time="2025-11-19T13:05:08.345508" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/loginBtn</msg>
+<msg time="2025-11-24T14:52:13.549322" level="INFO">Clicking element 'id=com.saucelabs.mydemoapp.android:id/loginBtn'.</msg>
+<msg time="2025-11-24T14:52:14.143248" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/loginBtn</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/loginBtn</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:07.732719" elapsed="0.612789"/>
+<status status="PASS" start="2025-11-24T14:52:13.548320" elapsed="0.595930"/>
 </kw>
 <arg>email=bod@example.com</arg>
 <arg>password=10203040</arg>
-<status status="PASS" start="2025-11-19T13:05:07.045779" elapsed="1.299729"/>
+<status status="PASS" start="2025-11-24T14:52:12.794030" elapsed="1.350220"/>
 </kw>
 <kw name="Dado que Adiciono produtos" owner="checkout">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Products</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:08.358506" elapsed="1.691912"/>
+<status status="PASS" start="2025-11-24T14:52:14.147247" elapsed="1.661081"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:10.051419" level="INFO">Clicking element 'xpath=(//*[@content-desc="Product Image"])[1]'.</msg>
-<msg time="2025-11-19T13:05:10.293938" level="INFO">xpath criteria: (//*[@content-desc="Product Image"])[1]</msg>
+<msg time="2025-11-24T14:52:15.809327" level="INFO">Clicking element 'xpath=(//*[@content-desc="Product Image"])[1]'.</msg>
+<msg time="2025-11-24T14:52:16.046326" level="INFO">xpath criteria: (//*[@content-desc="Product Image"])[1]</msg>
 <arg>xpath=(//*[@content-desc="Product Image"])[1]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:10.050418" elapsed="0.243520"/>
+<status status="PASS" start="2025-11-24T14:52:15.808328" elapsed="0.237998"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:11.379323" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]
-xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</msg>
+<msg time="2025-11-24T14:52:17.080004" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</msg>
 <arg>xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:10.293938" elapsed="1.085385"/>
+<status status="PASS" start="2025-11-24T14:52:16.046326" elapsed="1.033678"/>
 </kw>
 <kw name="Get Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:11.494320" level="INFO">Element 'xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]' text is '$ 29.99' </msg>
-<msg time="2025-11-19T13:05:11.494320" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</msg>
-<msg time="2025-11-19T13:05:11.495320" level="INFO">${preco} = $ 29.99</msg>
+<msg time="2025-11-24T14:52:17.178086" level="INFO">Element 'xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]' text is '$ 29.99' </msg>
+<msg time="2025-11-24T14:52:17.179077" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</msg>
+<msg time="2025-11-24T14:52:17.179077" level="INFO">${preco} = $ 29.99</msg>
 <var>${preco}</var>
 <arg>xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<status status="PASS" start="2025-11-19T13:05:11.379323" elapsed="0.115997"/>
+<status status="PASS" start="2025-11-24T14:52:17.081007" elapsed="0.098070"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${preco}</arg>
 <arg>$ 29.99</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-11-19T13:05:11.495320" elapsed="0.000000"/>
+<status status="PASS" start="2025-11-24T14:52:17.179077" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:11.496320" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Tap to add product to cart"]'.</msg>
-<msg time="2025-11-19T13:05:11.677320" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Tap to add product to cart"]</msg>
+<msg time="2025-11-24T14:52:17.181077" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Tap to add product to cart"]'.</msg>
+<msg time="2025-11-24T14:52:17.352211" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Tap to add product to cart"]</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Tap to add product to cart"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:11.495320" elapsed="0.182000"/>
+<status status="PASS" start="2025-11-24T14:52:17.180077" elapsed="0.172134"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:11.679321" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Displays number of items in your cart"]'.</msg>
-<msg time="2025-11-19T13:05:12.536321" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Displays number of items in your cart"]</msg>
+<msg time="2025-11-24T14:52:17.354206" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Displays number of items in your cart"]'.</msg>
+<msg time="2025-11-24T14:52:18.251669" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Displays number of items in your cart"]</msg>
 <arg>xpath=//android.widget.ImageView[@content-desc="Displays number of items in your cart"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:11.677320" elapsed="0.859001"/>
+<status status="PASS" start="2025-11-24T14:52:17.353210" elapsed="0.898459"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:08.358506" elapsed="4.177815"/>
+<status status="PASS" start="2025-11-24T14:52:14.147247" elapsed="4.104422"/>
 </kw>
 <kw name="E Confiro carrinho" owner="checkout">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:13.673385" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/titleTV"]
-xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/titleTV"]</msg>
+<msg time="2025-11-24T14:52:19.267269" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/titleTV"]</msg>
 <arg>xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/titleTV"]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:12.544320" elapsed="1.129065"/>
+<status status="PASS" start="2025-11-24T14:52:18.256667" elapsed="1.010602"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:13.778386" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</msg>
+<msg time="2025-11-24T14:52:19.337269" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</msg>
 <arg>xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/priceTV"]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:13.674386" elapsed="0.104000"/>
+<status status="PASS" start="2025-11-24T14:52:19.268270" elapsed="0.068999"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:13.855391" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/totalPriceTV"]</msg>
+<msg time="2025-11-24T14:52:19.434272" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/totalPriceTV"]</msg>
 <arg>xpath=//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/totalPriceTV"]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:13.779386" elapsed="0.076005"/>
+<status status="PASS" start="2025-11-24T14:52:19.338268" elapsed="0.097002"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:12.543324" elapsed="1.312067"/>
+<status status="PASS" start="2025-11-24T14:52:18.256667" elapsed="1.178603"/>
 </kw>
 <kw name="E acesso checkout" owner="checkout">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:13.859387" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirms products for checkout"]'.</msg>
-<msg time="2025-11-19T13:05:14.058897" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Confirms products for checkout"]</msg>
+<msg time="2025-11-24T14:52:19.439268" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirms products for checkout"]'.</msg>
+<msg time="2025-11-24T14:52:19.611299" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Confirms products for checkout"]</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Confirms products for checkout"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:13.857387" elapsed="0.201510"/>
+<status status="PASS" start="2025-11-24T14:52:19.438271" elapsed="0.173028"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:15.223569" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/enterShippingAddressTV
+<msg time="2025-11-24T14:52:20.579912" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/enterShippingAddressTV
 criteria is com.saucelabs.mydemoapp.android:id/enterShippingAddressTV</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/enterShippingAddressTV</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:14.059897" elapsed="1.163672"/>
+<status status="PASS" start="2025-11-24T14:52:19.611299" elapsed="0.968613"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:15.225567" level="INFO">Typing text 'Jean Felippe' into text field 'id=com.saucelabs.mydemoapp.android:id/fullNameET'</msg>
-<msg time="2025-11-19T13:05:15.971866" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/fullNameET</msg>
+<msg time="2025-11-24T14:52:20.581908" level="INFO">Typing text 'Jean Felippe' into text field 'id=com.saucelabs.mydemoapp.android:id/fullNameET'</msg>
+<msg time="2025-11-24T14:52:21.310096" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/fullNameET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/fullNameET</arg>
 <arg>text=Jean Felippe</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:15.223569" elapsed="0.749297"/>
+<status status="PASS" start="2025-11-24T14:52:20.579912" elapsed="0.731185"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:15.973938" level="INFO">Typing text 'Rio de Janeiro' into text field 'id=com.saucelabs.mydemoapp.android:id/address1ET'</msg>
-<msg time="2025-11-19T13:05:17.138429" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/address1ET</msg>
+<msg time="2025-11-24T14:52:21.312098" level="INFO">Typing text 'Rio de Janeiro' into text field 'id=com.saucelabs.mydemoapp.android:id/address1ET'</msg>
+<msg time="2025-11-24T14:52:21.884536" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/address1ET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/address1ET</arg>
 <arg>text=Rio de Janeiro</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:15.972866" elapsed="1.165563"/>
+<status status="PASS" start="2025-11-24T14:52:21.311097" elapsed="0.574437"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:17.140432" level="INFO">Typing text 'Rio de Janeiro' into text field 'id=com.saucelabs.mydemoapp.android:id/address2ET'</msg>
-<msg time="2025-11-19T13:05:18.241100" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/address2ET</msg>
+<msg time="2025-11-24T14:52:21.886534" level="INFO">Typing text 'Rio de Janeiro' into text field 'id=com.saucelabs.mydemoapp.android:id/address2ET'</msg>
+<msg time="2025-11-24T14:52:22.473003" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/address2ET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/address2ET</arg>
 <arg>text=Rio de Janeiro</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:17.139429" elapsed="1.101671"/>
+<status status="PASS" start="2025-11-24T14:52:21.885534" elapsed="0.587469"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:18.243119" level="INFO">Typing text 'Rio de Janeiro' into text field 'id=com.saucelabs.mydemoapp.android:id/cityET'</msg>
-<msg time="2025-11-19T13:05:18.815331" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cityET</msg>
+<msg time="2025-11-24T14:52:22.475004" level="INFO">Typing text 'Rio de Janeiro' into text field 'id=com.saucelabs.mydemoapp.android:id/cityET'</msg>
+<msg time="2025-11-24T14:52:23.057261" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cityET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/cityET</arg>
 <arg>text=Rio de Janeiro</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:18.241100" elapsed="0.575231"/>
+<status status="PASS" start="2025-11-24T14:52:22.474002" elapsed="0.583259"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:18.817330" level="INFO">Typing text 'RJ' into text field 'id=com.saucelabs.mydemoapp.android:id/stateET'</msg>
-<msg time="2025-11-19T13:05:20.141329" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/stateET</msg>
+<msg time="2025-11-24T14:52:23.059260" level="INFO">Typing text 'RJ' into text field 'id=com.saucelabs.mydemoapp.android:id/stateET'</msg>
+<msg time="2025-11-24T14:52:23.643558" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/stateET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/stateET</arg>
 <arg>text=RJ</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:18.816331" elapsed="1.326001"/>
+<status status="PASS" start="2025-11-24T14:52:23.057261" elapsed="0.587297"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:20.145334" level="INFO">Typing text '21031620' into text field 'id=com.saucelabs.mydemoapp.android:id/zipET'</msg>
-<msg time="2025-11-19T13:05:21.326702" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/zipET</msg>
+<msg time="2025-11-24T14:52:23.645557" level="INFO">Typing text '21031620' into text field 'id=com.saucelabs.mydemoapp.android:id/zipET'</msg>
+<msg time="2025-11-24T14:52:24.811999" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/zipET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/zipET</arg>
 <arg>text=21031620</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:20.143330" elapsed="1.184374"/>
+<status status="PASS" start="2025-11-24T14:52:23.644558" elapsed="1.168438"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:21.328701" level="INFO">Typing text 'Brazil' into text field 'id=com.saucelabs.mydemoapp.android:id/countryET'</msg>
-<msg time="2025-11-19T13:05:21.962498" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/countryET</msg>
+<msg time="2025-11-24T14:52:24.813999" level="INFO">Typing text 'Brazil' into text field 'id=com.saucelabs.mydemoapp.android:id/countryET'</msg>
+<msg time="2025-11-24T14:52:25.435232" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/countryET</msg>
 <arg>id=com.saucelabs.mydemoapp.android:id/countryET</arg>
 <arg>text=Brazil</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:21.327704" elapsed="0.634794"/>
+<status status="PASS" start="2025-11-24T14:52:24.812996" elapsed="0.623235"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:21.964498" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Saves user info for checkout"]'.</msg>
-<msg time="2025-11-19T13:05:23.639457" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Saves user info for checkout"]</msg>
+<msg time="2025-11-24T14:52:25.437232" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Saves user info for checkout"]'.</msg>
+<msg time="2025-11-24T14:52:26.121807" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Saves user info for checkout"]</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Saves user info for checkout"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:21.962498" elapsed="1.676959"/>
+<status status="PASS" start="2025-11-24T14:52:25.436231" elapsed="0.686574"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:13.856386" elapsed="9.783071"/>
+<status status="PASS" start="2025-11-24T14:52:19.437269" elapsed="6.685536"/>
 </kw>
 <kw name="E ao conferir e concluir a compra" owner="checkout">
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:23.642448" level="INFO">Typing text '"Testando aqui"' into text field 'com.saucelabs.mydemoapp.android:id/nameET'</msg>
-<msg time="2025-11-19T13:05:24.366851" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/nameET</msg>
+<msg time="2025-11-24T14:52:26.129807" level="INFO">Typing text 'Jean' into text field 'com.saucelabs.mydemoapp.android:id/nameET'</msg>
+<msg time="2025-11-24T14:52:27.290951" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/nameET</msg>
 <arg>com.saucelabs.mydemoapp.android:id/nameET</arg>
-<arg>text="Testando aqui"</arg>
+<arg>text=${nome}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:23.641445" elapsed="0.725406"/>
+<status status="PASS" start="2025-11-24T14:52:26.127809" elapsed="1.163142"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:24.367852" level="INFO">Typing text '"2302555010203020"' into text field 'com.saucelabs.mydemoapp.android:id/cardNumberET'</msg>
-<msg time="2025-11-19T13:05:24.957374" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cardNumberET</msg>
+<msg time="2025-11-24T14:52:27.292974" level="INFO">Typing text '2302555010203020' into text field 'com.saucelabs.mydemoapp.android:id/cardNumberET'</msg>
+<msg time="2025-11-24T14:52:28.475341" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/cardNumberET</msg>
 <arg>com.saucelabs.mydemoapp.android:id/cardNumberET</arg>
-<arg>text="2302555010203020"</arg>
+<arg>text=${cartao}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:24.366851" elapsed="0.591526"/>
+<status status="PASS" start="2025-11-24T14:52:27.290951" elapsed="1.184390"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:24.959376" level="INFO">Typing text '"0331"' into text field 'com.saucelabs.mydemoapp.android:id/expirationDateET'</msg>
-<msg time="2025-11-19T13:05:26.121375" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/expirationDateET</msg>
+<msg time="2025-11-24T14:52:28.477338" level="INFO">Typing text '0331' into text field 'com.saucelabs.mydemoapp.android:id/expirationDateET'</msg>
+<msg time="2025-11-24T14:52:29.358539" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/expirationDateET</msg>
 <arg>com.saucelabs.mydemoapp.android:id/expirationDateET</arg>
-<arg>text="0331"</arg>
+<arg>text=${exp}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:24.958377" elapsed="1.162998"/>
+<status status="PASS" start="2025-11-24T14:52:28.476341" elapsed="0.883196"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:26.123375" level="INFO">Typing text '"123"' into text field 'com.saucelabs.mydemoapp.android:id/securityCodeET'</msg>
-<msg time="2025-11-19T13:05:27.310643" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/securityCodeET</msg>
+<msg time="2025-11-24T14:52:29.360558" level="INFO">Typing text '123' into text field 'com.saucelabs.mydemoapp.android:id/securityCodeET'</msg>
+<msg time="2025-11-24T14:52:30.537669" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/securityCodeET</msg>
 <arg>com.saucelabs.mydemoapp.android:id/securityCodeET</arg>
-<arg>text="123"</arg>
+<arg>text=${sec_code}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:26.121375" elapsed="1.189268"/>
+<status status="PASS" start="2025-11-24T14:52:29.359537" elapsed="1.178132"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:27.311641" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]'.</msg>
-<msg time="2025-11-19T13:05:28.939361" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]</msg>
+<msg time="2025-11-24T14:52:30.539672" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]'.</msg>
+<msg time="2025-11-24T14:52:32.008655" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:27.310643" elapsed="1.628718"/>
+<status status="PASS" start="2025-11-24T14:52:30.537669" elapsed="1.471986"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:23.640445" elapsed="5.298916"/>
+<arg>nome=Jean</arg>
+<arg>cartao=2302555010203020</arg>
+<arg>exp=0331</arg>
+<arg>sec_code=123</arg>
+<status status="PASS" start="2025-11-24T14:52:26.127809" elapsed="5.881846"/>
 </kw>
 <kw name="Quando Acessar Ultima tela checkout" owner="checkout">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-11-19T13:05:28.941345" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Completes the process of checkout"]'.</msg>
-<msg time="2025-11-19T13:05:29.150345" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Completes the process of checkout"]</msg>
+<msg time="2025-11-24T14:52:32.011658" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Completes the process of checkout"]'.</msg>
+<msg time="2025-11-24T14:52:32.168650" level="INFO">xpath criteria: //android.widget.Button[@content-desc="Completes the process of checkout"]</msg>
 <arg>xpath=//android.widget.Button[@content-desc="Completes the process of checkout"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-11-19T13:05:28.940345" elapsed="0.211000"/>
+<status status="PASS" start="2025-11-24T14:52:32.010658" elapsed="0.157992"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:28.940345" elapsed="0.211000"/>
+<status status="PASS" start="2025-11-24T14:52:32.010658" elapsed="0.157992"/>
 </kw>
 <kw name="Então exibira mensagem final" owner="checkout">
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
 <arg>text=Checkout Complete</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-11-19T13:05:29.161347" elapsed="0.834514"/>
+<status status="PASS" start="2025-11-24T14:52:32.170651" elapsed="0.942375"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:05:29.161347" elapsed="0.834514"/>
+<status status="PASS" start="2025-11-24T14:52:32.169649" elapsed="0.943377"/>
 </kw>
-<status status="PASS" start="2025-11-19T13:04:49.842448" elapsed="40.154413"/>
+<status status="PASS" start="2025-11-24T14:51:46.025772" elapsed="47.088251"/>
 </test>
-<status status="PASS" start="2025-11-19T13:04:49.497542" elapsed="40.502318"/>
+<status status="PASS" start="2025-11-24T14:51:45.583772" elapsed="47.534253"/>
 </suite>
 <statistics>
 <total>

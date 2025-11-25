@@ -120,15 +120,16 @@ E acesso checkout
 
     Click Element    xpath=//android.widget.Button[@content-desc="Saves user info for checkout"]
 
-E ao conferir e concluir a compra
+E ao conferir e concluir a compra    #nome=Jean    cartao=2302555010203020    exp=0331    sec_code=123
+    [Arguments]    ${nome}    ${cartao}    ${exp}    ${sec_code}
 
-    Input Text     com.saucelabs.mydemoapp.android:id/nameET    text="Testando aqui"
+    Input Text     com.saucelabs.mydemoapp.android:id/nameET    text=${nome}
 
-    Input Text     com.saucelabs.mydemoapp.android:id/cardNumberET   text="2302555010203020"
+    Input Text     com.saucelabs.mydemoapp.android:id/cardNumberET   text=${cartao}
 
-    Input Text     com.saucelabs.mydemoapp.android:id/expirationDateET   text="0331"
+    Input Text     com.saucelabs.mydemoapp.android:id/expirationDateET   text=${exp}
 
-     Input Text     com.saucelabs.mydemoapp.android:id/securityCodeET    text="123"
+     Input Text     com.saucelabs.mydemoapp.android:id/securityCodeET    text=${sec_code}
 
 
     Click Element    xpath=//android.widget.Button[@content-desc="Saves payment info and launches screen to review checkout data"]
